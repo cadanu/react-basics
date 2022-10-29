@@ -1,0 +1,7 @@
+:root {
+    --basics-main-bg: #5f4e4e;
+}
+
+body {
+    background-color: var(--basics-main-bg, slategray);
+}
