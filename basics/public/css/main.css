@@ -11,6 +11,43 @@ body {
     min-width: 312px;
 }
 
+/* hooks training */
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.counter__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 255, 255);
+    font-size: 4rem;
+    height: 80px;
+    width: 70px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 5px 7px var(--basics-main-bg);
+    box-shadow: 0 0 7px 0.5px white;
+}
+.counter__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    max-height: 80px;
+    width: 100%;
+}
+.counter__buttons button {
+    background: black;
+    color: white;
+    font-size: 1.7rem;
+    width: 95px;
+}
+/**/
+
 nav {
     z-index: 10;
 }
@@ -18,7 +55,11 @@ header nav a {
     padding: 5px;
     color: #b397ad;
 }
-header nav a:hover {
+header nav a:hover, header nav .--active {
     color: #eee0eb;
+}
+
+header nav .--active {
+    text-shadow: 0 0 5px black;
 }
 

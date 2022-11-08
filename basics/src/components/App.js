@@ -3,6 +3,7 @@ import Header from './Header';
 import Logo from './Logo';
 import Card from './Card';
 import Button from './Button';
+import Counter from './counter/Counter';
 // import Person from './Person';
 
 let user =
@@ -73,11 +74,14 @@ const App = () => {
 
                 <nav style={{position: 'relative', paddingLeft: '10%'}}>
                     <a href='#'>Home</a>
-                    <a href='#'>Contacts</a>
+                    <a className='header nav --active' href='#'>Contacts</a>
                     <a href='#'>Account</a>
                 </nav>
 
             </Header>
+
+            <Counter>
+            </Counter>
 
             <Button>+</Button>
 

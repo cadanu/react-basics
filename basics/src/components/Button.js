@@ -2,9 +2,16 @@ import React from 'react';
 
 
 const Button = (props) => {
+
+    let buttonRef = React.createRef();
+
+    let clickMe = () => {
+        console.log(buttonRef.current.clientWidth);
+    }
+
     return (
         <button
-            id="button"
+            id="button" ref={buttonRef} onClick={clickMe}
             style={{
                 background: 'black',
                 color: 'white',
