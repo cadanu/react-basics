@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Kolker+Brush&display=swap');
+
+
 :root {
     --basics-main-bg: #5f4e4e;
 }
 
 body {
     background-color: var(--basics-main-bg, slategray);
+    min-width: 312px;
 }
 
+nav {
+    z-index: 10;
+}
 header nav a {
     padding: 5px;
+    color: #b397ad;
 }
+header nav a:hover {
+    color: #eee0eb;
+}
+

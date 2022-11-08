@@ -1,41 +1,43 @@
 import React from 'react';
 
 
-export default function(props) {
+const Card = (props) => {
+
     return (
-        // <div className="ui link cards">
-            <div className="card">
-                <div className="image">
-                    <img src={props.userData.imageUrl} />
-                </div>
-                <div className="content">
-                    <div className="header">
-                        {props.userData.firstName}</div>
-                    <div className="meta">
-                        <a>
-                            {props.userData.relation}
-                        </a>
-                    </div>
-                    <div className="description">
-                        {props.userData.firstName}{props.userData.bio}
-                    </div>
-                </div>
-                <div className="extra content">
-                    <span className="right floated">
-                        Joined in {props.userData.yearJoined}
-                    </span>
-                    <span>
-                    <i className="user icon" />
-                    {props.userData.friends}
-                    </span>
-                </div>
-                {/* <h1> */}
-                {/* {props.userTestrandom.field} */}
-                {/* </h1> */}
+        <div className="card">
+            <div className="image">
+                <img src={props.userData.imageUrl} />
             </div>
+            <div className="content">
+                <div className="header">
+                    {props.userData.firstName}</div>
+                <div className="meta">
+                    <a>
+                        {props.userData.relation}
+                    </a>
+                </div>
+                <div className="description">
+                    {props.userData.bio}
+                </div>
+            </div>
+            <div className="extra content">
+                <span className="right floated">
+                    Joined in {props.userData.yearJoined}
+                </span>
+                <span>
+                <i className="user icon" />
+                {props.userData.friends}
+                </span>
+            </div>
+            {/* <h1> */}
+            {/* {props.userTestrandom.field} */}
+            {/* </h1> */}
+        </div>
     )
+
 }
 
+export default Card;
 
 
 

@@ -1,14 +1,21 @@
 import React from 'react';
 
-export default function(props) {
+
+const Header = (props) => {
+
+    let styles = {
+        background: props.background,
+        padding: "15px 20px",
+        color: "white"
+    }
+
     return(
-        <header style={{
-            background: props.background,
-            padding: "15px 20px",
-            color: "white" }}>
+        <header style={styles}>
 
             {props.children}
 
         </header>
     )
 }
+
+export default Header;
