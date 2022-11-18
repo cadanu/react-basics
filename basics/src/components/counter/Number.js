@@ -5,7 +5,7 @@ const Number = (props) => {
     return (
         <div className='counter__display'>
             <div className='number'>
-                0
+                {props.digit}
             </div>
         </div>
     )

@@ -54,9 +54,9 @@ let cardData = [
     }
 ]
 
-let testData = {
-    field: 'TestinG'
-}
+// let testData = {
+//     field: 'TestinG'
+// }
 
 const App = () => {
 
@@ -80,8 +80,7 @@ const App = () => {
 
             </Header>
 
-            <Counter>
-            </Counter>
+            <Counter/>
 
             <Button>+</Button>
 
